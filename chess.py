@@ -16,7 +16,7 @@ def chess():
     canvas.pack()
     for i in range(0, TABLE_SIZE, TABLE_SIZE//8):
         for j in range(0, TABLE_SIZE, TABLE_SIZE//8):
-            if (i+j) % (TABLE_SIZE//4) == 0:
+            if (i+j+100) % (TABLE_SIZE//4) == 0:
                 canvas.create_rectangle(i, j, i+TABLE_SIZE//8, j+TABLE_SIZE//8, fill="black")
     canvas.create_image(TABLE_SIZE//2, TABLE_SIZE//2, image= load_image("./sprites/pieces.png")) 
     root.mainloop()
